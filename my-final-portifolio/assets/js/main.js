@@ -132,7 +132,7 @@ var hotRestaurant = {
 
 var finalProject = {
     name: "final project",
-    line: "a lot",
+    line: 14792,
     time: "this project took me about 2.5 months to finish"
 };
 
@@ -270,7 +270,7 @@ console.log(hotRestaurant,
 
 console.log(finalProject,
     name, "final project",
-    lines, "a lot",
+    lines, 14792,
     time, "this project took me about 2.5 months to finish"
 );
 
@@ -1056,7 +1056,7 @@ hotRestaurant.printInfo();
 
 var finalProject = {
 
-    line: "a lot",
+    line: 14792,
     name: "final project",
     time: "this project took me 2.5 months to finish",
 
