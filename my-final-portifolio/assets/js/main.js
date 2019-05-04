@@ -124,6 +124,12 @@ var giphy1 = {
     time: "this project took me 1 week to complete it"
 };
 
+var hotRestaurant = {
+    name: "hot restaurant",
+    line: 178,
+    time: "this project took me about 1 week to complete it"
+};
+
 console.log(hangman,
     name, "hangman",
     line, 400,
@@ -250,6 +256,12 @@ console.log(giphy1,
     time, "this project took me 1 week to complete it"
 );
 
+console.log(hotRestaurant,
+    name, "hot restaurant",
+    lines, 178,
+    time, "this project took me 1 week to complete it"
+);
+
 var confirmHangman = confirm("How long did you take to finish this project?");
 var confirmTrivia = confirm("How long did you take to finsih this project?");
 var confirmWeek4Game = confirm("What type of technologies did you use in this project?");
@@ -271,6 +283,7 @@ var confirmRPSMultiplayer = confirm("How well did you do on this project when it
 var confirmBasicPortifolio = confirm("What was the only technoogies you use in this project?");
 var confirmLiriNodeApp = confirm("Why did you have only 15 lines of code in your project?");
 var confirmGiphy1 = confirm("Why did you name your project giphy 1?");
+var confirmHotRestaurant = confirm("why did you use only one langauge in this project");
 var theBestProjectEver = prompt("Out of all of the projects you made which one is your favorite?");
 
 if (confirmHangman) {
@@ -335,6 +348,9 @@ else if (confirmLiriNodeApp) {
 }
 else if (confirmGiphy1) {
     alert("The reson why I name the project giphy 1 is because I thought it sound cool");
+}
+else if (confirmHotRestaurant) {
+    alert("The reason why I used only one language is because I have not learned other langauges yet");
 }
 else {
     alert("My favorite project that I made is the magic the gathering");
@@ -990,3 +1006,264 @@ var giphy1 = {
 }
 
 giphy1.printInfo();
+
+var hotRestaurant = {
+
+    line: "178",
+    name: "hot restaurant",
+    time: "this project took me 1 week to finish",
+
+    printInfo: function () {
+
+        console.log("inside printInfo()");
+
+        console.log(this);
+
+        console.log("line:", this.line, "Name:", this.name, "Time:", this.time);
+
+        var nestedFunction = function () {
+
+            console.log("inside nestedFunction()");
+
+            console.log(this);
+
+            console.log("Line:", this.line, "Name:", this.name, "Time:", this.time);
+        };
+
+        nestedFunction();
+
+    }
+
+}
+
+hotRestaurant.printInfo();
+
+var project = {
+    name: "hangman",
+    sayCool: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayCool();
+
+var project = {
+    name: "trivia game",
+    sayShort: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayShort();
+
+var project = {
+    name: "week 4 game",
+    sayEasy: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayEasy();
+
+var project = {
+    name: "react game",
+    sayLong: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayLong();
+
+var project = {
+    name: "page turner",
+    sayGroup: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayGroup();
+
+var project = {
+    name: "food box hero",
+    sayGroup: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayGroup();
+
+var project = {
+    name: "aqua zotic project",
+    sayGroup: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayGroup();
+
+var project = {
+    name: "friend finder",
+    sayWeak: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayWeak();
+
+var project = {
+    name: "giphy-1",
+    sayNotBad: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayNotBad();
+
+var project = {
+    name: "mongoese game",
+    sayTooTough: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayTooTough();
+
+var project = {
+    name: "bamazon",
+    sayNice: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayNice();
+
+var project = {
+    name: "bootstrap portfolio",
+    sayGreat: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayGreat();
+
+var project = {
+    name: "basic portfolio",
+    sayDumb: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayDumb();
+
+var project = {
+    name: "responsive portfolio",
+    saySweet: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.saySweet();
+
+var project = {
+    name: "food and drink tracker",
+    sayAwesome: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayAwesome();
+
+var project = {
+    name: "word find",
+    sayStupid: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayStupid();
+
+var project = {
+    name: "nytreact",
+    sayOkay: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayOkay();
+
+var project = {
+    name: "RPS multiplayer",
+    sayAmazing: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayAmazing();
+
+var project = {
+    name: "star wars app",
+    sayBest: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayBest();
+
+var project = {
+    name: " liri node app",
+    sayBetter: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayBetter();
+
+var project = {
+    name: "hot restaurant",
+    sayWorst: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayWorst();
+
+var project = {
+    name: "magic the gathering",
+    sayBeautiful: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayBeautiful();
+
+var project = {
+    name: "the final project",
+    sayFun: function () {
+        console.log("this project " + this.name);
+        console.log(this);
+    }
+}
+
+project.sayFun();
