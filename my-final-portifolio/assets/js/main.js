@@ -130,6 +130,12 @@ var hotRestaurant = {
     time: "this project took me about 1 week to complete it"
 };
 
+var finalProject = {
+    name: "final project",
+    line: "a lot",
+    time: "this project took me about 2.5 months to finish"
+};
+
 console.log(hangman,
     name, "hangman",
     line, 400,
@@ -262,6 +268,12 @@ console.log(hotRestaurant,
     time, "this project took me 1 week to complete it"
 );
 
+console.log(finalProject,
+    name, "final project",
+    lines, "a lot",
+    time, "this project took me about 2.5 months to finish"
+);
+
 var confirmHangman = confirm("How long did you take to finish this project?");
 var confirmTrivia = confirm("How long did you take to finsih this project?");
 var confirmWeek4Game = confirm("What type of technologies did you use in this project?");
@@ -284,6 +296,7 @@ var confirmBasicPortifolio = confirm("What was the only technoogies you use in t
 var confirmLiriNodeApp = confirm("Why did you have only 15 lines of code in your project?");
 var confirmGiphy1 = confirm("Why did you name your project giphy 1?");
 var confirmHotRestaurant = confirm("why did you use only one langauge in this project");
+var confirmfinalProject = confirm("how long did it take you to make this project?");
 var theBestProjectEver = prompt("Out of all of the projects you made which one is your favorite?");
 
 if (confirmHangman) {
@@ -351,6 +364,9 @@ else if (confirmGiphy1) {
 }
 else if (confirmHotRestaurant) {
     alert("The reason why I used only one language is because I have not learned other langauges yet");
+}
+else if (confirmfinalProject) {
+    alert("this project took me about 2 months to finish");
 }
 else {
     alert("My favorite project that I made is the magic the gathering");
@@ -1037,6 +1053,37 @@ var hotRestaurant = {
 }
 
 hotRestaurant.printInfo();
+
+var finalProject = {
+
+    line: "a lot",
+    name: "final project",
+    time: "this project took me 2.5 months to finish",
+
+    printInfo: function () {
+
+        console.log("inside printInfo()");
+
+        console.log(this);
+
+        console.log("line:", this.line, "Name:", this.name, "Time:", this.time);
+
+        var nestedFunction = function () {
+
+            console.log("inside nestedFunction()");
+
+            console.log(this);
+
+            console.log("Line:", this.line, "Name:", this.name, "Time:", this.time);
+        };
+
+        nestedFunction();
+
+    }
+
+}
+
+finalProject.printInfo();
 
 var project = {
     name: "hangman",
