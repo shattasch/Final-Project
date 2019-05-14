@@ -1314,3 +1314,40 @@ var project = {
 }
 
 project.sayFun();
+
+var differentProjects = ["hangman",
+    "Trivia Game",
+    "Week 4 game",
+    "React game",
+    "Responsive Portfolio",
+    "Basic portfolio",
+    "Bootstrap portfolio",
+    "Page Turner",
+    "Food box hero",
+    "Aqua Zotic project",
+    "nytreact",
+    "Word find",
+    "the final project",
+    "magic the gathering",
+    "star wars app",
+    "RPS multiplayer",
+    "liri node app",
+    "hot restaurant",
+    "friend finder",
+    "food and drink tracher",
+    "bamazon",
+    "mongooese game",
+    "giphy 1"];
+
+var differentProjects = $("#different-projects");
+
+$("#empty-div").html("<h1> come and see the projects I created over the past months </h1>");
+$("#empty-div").append("ok I will be over soon to look at your projects");
+
+$("#empty-div").html("<h1> some of the projects are amazing </h1>");
+
+var newDiv = $("<div>");
+
+newDiv.text("thank you your projects are amazing");
+
+$("#empty-div").append(newDiv);
