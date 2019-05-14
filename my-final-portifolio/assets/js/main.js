@@ -1351,3 +1351,42 @@ var newDiv = $("<div>");
 newDiv.text("thank you your projects are amazing");
 
 $("#empty-div").append(newDiv);
+
+var differentProjects = ["hangman",
+    "Trivia Game",
+    "Week 4 game",
+    "React game",
+    "Responsive Portfolio",
+    "Basic portfolio",
+    "Bootstrap portfolio",
+    "Page Turner",
+    "Food box hero",
+    "Aqua Zotic project",
+    "nytreact",
+    "Word find",
+    "the final project",
+    "magic the gathering",
+    "star wars app",
+    "RPS multiplayer",
+    "liri node app",
+    "hot restaurant",
+    "friend finder",
+    "food and drink tracher",
+    "bamazon",
+    "mongooese game",
+    "giphy 1"];
+
+function displayDifferentProjects() {
+
+    var projects = $(this).attr("data-name");
+    var queryURL = "https://github.com/" + projects + "&y=&plot=short&apikey=trilogy";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+        $("#projects-view").text(JSON.stringify(response));
+        renderButtons();
+    });
+
+}
